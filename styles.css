@@ -10,7 +10,7 @@ body {
 }
 .pro {
   text-align: center;
-  color: black;
+  color: orangered;
   padding-top: 80px;
 }
 nav {
@@ -26,6 +26,8 @@ nav {
 }
 nav h1{
     padding-left: 7rem;
+    color: orangered;
+    font-size: xx-large;
 }
 nav .cart {
   background-color: #444;
@@ -33,6 +35,9 @@ nav .cart {
   color: #fff;
   padding:0.5rem;
   cursor: pointer;
+}
+nav .cart1{
+    padding-right: 6rem;
 }
 main {
   display: flex;
