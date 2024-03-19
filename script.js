@@ -18,32 +18,12 @@ addToCartButton.addEventListener('click', function() {
         price: price
     });
 
-    // Update the cart icon
-    document.querySelector('#cartIcon').textContent = cart.length;
-});
-// Select the cart container
-var cartContainer = document.querySelector('.cart-container');
-
-// Function to generate cart HTML
-function generateCartHTML(cart) {
-    // Start with an empty string
-    var html = '';
-
-    // Loop over the cart array
-    for (var i = 0; i < cart.length; i++) {
-        // For each item, add a string of HTML to the html variable
-        html += `
-            <div class="cart-item">
-                <h2>${cart[i].name}</h2>
-                <p>${cart[i].size}</p>
-                <p>${cart[i].price}</p>
-            </div>
-        `;
+    // Update the cart count
+    var cartCount = document.querySelector('#cartCount');
+    if (!cartCount) {
+        cartCount = document.createElement('span');
+        cartCount.id = 'cartCount';
+        document.querySelector('#cartIcon').after(cartCount);
     }
-
-    // After the loop, insert the HTML into the cart container
-    cartContainer.innerHTML = html;
-}
-
-// Call the function with the cart array
-generateCartHTML(cart);
+    cartCount.textContent = cart.length;
+});
