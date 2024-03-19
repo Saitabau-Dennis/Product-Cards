@@ -29,16 +29,14 @@ nav h1{
     color: orangered;
     font-size: xx-large;
 }
-nav .cart {
-  background-color: #444;
-  border: none;
-  color: #fff;
-  padding:0.5rem;
+nav .cart{
   cursor: pointer;
+  padding-right: 6rem;
+  
 }
-nav .cart1{
+/*nav .cart1{
     padding-right: 6rem;
-}
+}*/
 main {
   display: flex;
   flex-wrap: nowrap;
