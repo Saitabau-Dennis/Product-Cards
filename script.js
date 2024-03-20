@@ -12,3 +12,14 @@ function displayCartItems() {
         console.log(cart[i]);
     }
 }
+// JavaScript
+document.querySelectorAll('.sizes span').forEach(span => {
+    span.addEventListener('click', function() {
+      // Remove 'selected' class from all spans
+      document.querySelectorAll('.sizes span').forEach(span => {
+        span.classList.remove('selected');
+      });
+      // Add 'selected' class to clicked span
+      this.classList.add('selected');
+    });
+  });

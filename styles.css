@@ -121,8 +121,13 @@ main {
   padding: 0.2em 0.5em;
   margin-bottom: 0.5rem;
   border-radius: 5px;
+  cursor: pointer;
 }
-
+/* CSS */
+.sizes span.selected {
+  background-color: black;
+  color: white;
+}
 
 .product-card label{
   margin: 0;
@@ -152,14 +157,18 @@ select:focus {
 .product-card button {
   background-color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.7rem;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 6rem 0.5rem 6rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
 }
 
 .product-card button:hover {
-  background-color: #444;
+  background-color:orangered;
   cursor: pointer;
 }
 /*Cart*/
