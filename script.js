@@ -12,11 +12,12 @@ addToCartButton.addEventListener('click', function() {
     var name = document.querySelector('.product-card h2').textContent;
 
     // Add the product to the cart
-    cart.push({
+    var item = {
         name: name,
         size: size,
         price: price
-    });
+    };
+    cart.push(item);
 
     // Update the cart count
     var cartCount = document.querySelector('#cartCount');
@@ -26,4 +27,27 @@ addToCartButton.addEventListener('click', function() {
         document.querySelector('#cartIcon').after(cartCount);
     }
     cartCount.textContent = cart.length;
+
+    // Add the item to the cart table
+    addToCart(item);
 });
+
+function addToCart(item) {
+    var cartBody = document.getElementById('cartBody');
+
+    var row = document.createElement('tr');
+
+    var cellName = document.createElement('td');
+    cellName.textContent = item.name;
+    row.appendChild(cellName);
+
+    var cellSize = document.createElement('td');
+    cellSize.textContent = item.size;
+    row.appendChild(cellSize);
+
+    var cellPrice = document.createElement('td');
+    cellPrice.textContent = item.price;
+    row.appendChild(cellPrice);
+
+    cartBody.appendChild(row);
+}

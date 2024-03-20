@@ -122,3 +122,23 @@ select:focus {
   background-color: #444;
   cursor: pointer;
 }
+/*Cart*/
+.cart2 {
+  width: 100%;
+  margin: auto;
+}
+
+#cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cartTable th, #cartTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+nav .home{
+  cursor: pointer;
+  text-decoration: none;
+}
