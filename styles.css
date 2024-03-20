@@ -86,12 +86,52 @@ main {
 
 .product-card h2 {
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+  padding-right: 4.4rem;
 }
 
 .product-card p {
   margin: 0;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  /*margin-bottom: 1.5rem;*/
   margin-bottom: 0.5rem;
+  
+}
+
+.size-selection p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding-right: 10.9rem;
+}
+
+.sizes {
+  display: flex;
+  gap: 0.5em;
+}
+
+.sizes span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 0.2em 0.5em;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+
+.product-card label{
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding-right: 11rem;
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
 }
 select {
   appearance: none;
