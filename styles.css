@@ -12,6 +12,7 @@ body {
   text-align: center;
   color: orangered;
   padding-top: 80px;
+  font-weight: bold;
 }
 nav {
   display: flex;
@@ -46,9 +47,9 @@ main {
 
 .product-card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px rgba(214, 206, 206, 0.1);
+  box-shadow: 2px 2px 5px rgba(4, 3, 3, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,4 +191,32 @@ select:focus {
 nav .home{
   cursor: pointer;
   text-decoration: none;
+}
+
+/*Cart page*/
+.cart-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-items {
+  width: 60%;
+}
+
+.checkout {
+  width: 35%;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
 }
